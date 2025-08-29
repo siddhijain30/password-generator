@@ -36,7 +36,8 @@ function App() {
         <h1 className='text-white text-center my-3 text-xl underline'>Password Generator</h1>
         <div className='flex  shadow outline-none rounded-lg overflow-hidden mb-4 gap-2'>
           <input type="text" value={pass || ""} className="outline-none w-full py-1 px-3 rounded-lg placeholder:text-gray-500 shadow-inner" placeholder="password" readOnly ref={passRef} />
-          <button onClick={copyToClipboard} className='outline-none text-white px-3 py-1 rounded-lg bg-blue-600'>copy</button>
+          <button onClick={copyToClipboard} className='outline-none text-white px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 active:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 active:scale-95 
+             shadow-md hover:shadow-lg'>copy</button>
         </div>
 
         <div className='flex text-sm gap-x-1'>

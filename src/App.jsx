@@ -5,6 +5,7 @@ function App() {
   const [number, setnumber] = useState(false)
   const [charac, setcharac] = useState(false)
   const [pass, setpass] = useState("")
+  const passRef = useRef(null);
 
   const pswdGen =  useCallback(() => {
       let pss = ""
